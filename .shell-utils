@@ -1,0 +1,26 @@
+#git #branch Get the current branch name
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+#git Delete all the branches on remote: origin
+# sample usage: delete_remote_branches origin
+
+delete_remote_branches() {
+    current=`git branch | grep \* | awk '{print $2}'`
+    git branch -a | grep $1 | grep -v HEAD | grep -v ^$current$ | cut -d'/' -f3 | xargs -n 1 git push -d origin
+}
+
+#git Delete local branches other than current
+
+delete_local_branches() {
+    git branch | grep -v \* | awk '{print $1}' | xargs -n 1 git branch -D
+}
+
+#git Delete all branches
+
+delete_branches() {
+    delete_remote_branches origin
+    delete_local_branches
+}

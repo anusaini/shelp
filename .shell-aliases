@@ -1,0 +1,39 @@
+alias lsb="git branch"
+alias lsd="git diff"
+alias lsds="git diff --stat"
+
+alias gs="git status"
+
+alias gcp="git cherry-pick"
+alias gcpc="gcp --continue"
+
+alias grv="git remote -v"
+alias gra="git remote add"
+
+alias grh="git reset --hard HEAD"
+alias gsh="git reset --soft HEAD"
+
+alias gpr="git pull --rebase"
+alias gprud="gpr upstream develop"
+alias gprum="gpr upstream master"
+alias gprur="gpr upstream release"
+
+alias gpo="git push origin"
+alias gpom="gpo master"
+alias gpod="gpo develop"
+alias gpor="gpo release"
+
+alias gco="git checkout"
+alias gcod="gco develop"
+alias gcom="gco master"
+alias gcor="gco release"
+alias gcot="gco temp"
+
+alias plog="git log --oneline --graph --all"
+
+alias glo="git log --oneline"
+alias gloten="glo -n10"
+
+alias gsyncm="gprum && gpom"
+alias gsyncd="gprud && gpod"
+alias gfetcha="grv | grep fetch | awk '{print $1}' | xargs -n 1 git fetch"
