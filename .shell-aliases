@@ -37,3 +37,10 @@ alias gloten="glo -n10"
 alias gsyncm="gprum && gpom"
 alias gsyncd="gprud && gpod"
 alias gfetcha="grv | grep fetch | awk '{print $1}' | xargs -n 1 git fetch"
+
+# forced push
+alias gpf="git push -f"
+alias gpfo="gpf origin"
+alias gpfom="gpfo master"
+alias gpfod="gpfo develop"
+alias gpfot="gpfo test"

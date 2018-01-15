@@ -5,10 +5,10 @@ files for helping out in shell | dev tools
 ## Usage
 
 ```bash
-  
+
   cp .shell-* .profile ~/
   source ~/.profile
-  
+
 ```
 
 ## For you to do

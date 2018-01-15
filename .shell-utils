@@ -7,6 +7,7 @@ parse_git_branch() {
 #git Delete all the branches on remote: origin
 # sample usage: delete_remote_branches origin
 
+# This throws error. It's nothing; but find a way out. #TODO @git.faf
 delete_remote_branches() {
     current=`git branch | grep \* | awk '{print $2}'`
     git branch -a | grep $1 | grep -v HEAD | grep -v ^$current$ | cut -d'/' -f3 | xargs -n 1 git push -d origin
