@@ -8,6 +8,12 @@ export PATH="$PATH:/opt/yarn-1.3.2/bin"
 # load depot tools
 export PATH="$PATH:$HOME/src/public/chromium/depot_tools"
 
+# touch files to create if these don't exist.
+touch ~/.shell-aliases
+touch ~/.shell-utils
+touch ~/.shell-work
+touch ~/.shell-temp
+
 # load shell-aliases
 source ~/.shell-aliases
 
