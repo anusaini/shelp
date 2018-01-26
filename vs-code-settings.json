@@ -1,0 +1,22 @@
+{
+  "editor.fontSize": 14,
+  "window.zoomLevel": 0,
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
+  "editor.detectIndentation": false,
+  "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressUpdateNotice": false,
+      "suppressWelcomeNotice": true
+  },
+  "json.format.enable": false,
+  "html.format.wrapLineLength": 0,
+  "explorer.confirmDragAndDrop": true,
+  "eslint.nodePath": null,
+  "eslint.autoFixOnSave": true
+}
